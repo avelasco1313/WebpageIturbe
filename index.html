@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinergia Logística Iturbe | Soluciones Globales de Transporte</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos CSS modernos */
+        :root {
+            --primary-color: #004080; /* Azul oscuro corporativo */
+            --secondary-color: #0073e6; /* Azul más claro */
+            --text-color: #333;
+            --light-bg: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            margin: 0;
+            background-color: var(--light-bg);
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        /* Estilos del Header */
+        header {
+            background: var(--white);
+            color: var(--primary-color);
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: 3px solid var(--secondary-color);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 5px 0 20px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Sección Hero/Banner */
+        .hero {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            max-width: 700px;
+            margin: auto;
+            opacity: 0.9;
+        }
+
+        /* Sección de Servicios */
+        #services {
+            padding: 60px 0;
+            background: var(--white);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .service-box {
+            background: var(--light-bg);
+            padding: 40px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .service-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .service-box i {
+            color: var(--secondary-color);
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .service-box h3 {
+            font-size: 1.5em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        /* Sección Sobre Nosotros */
+        #about {
+            padding: 60px 0;
+            background-color: var(--light-bg);
+        }
+
+        #about h2 {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .about-text {
+            flex: 2;
+        }
+
+        .about-image {
+            flex: 1;
+            background-color: #ddd;
+            height: 250px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-weight: bold;
+            border: 2px dashed #bbb;
+        }
+
+        /* Estilos del Footer */
+        footer {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 40px 0;
+            margin-top: 40px;
+            text-align: center;
+            border-top: 5px solid var(--secondary-color);
+        }
+
+        footer p {
+            margin: 10px 0;
+            opacity: 0.8;
+        }
+
+        /* Logo de LinkedIn en el footer */
+        .linkedin-link {
+            color: var(--white);
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .linkedin-link:hover {
+            color: #a0cfff; /* Azul claro al pasar el ratón */
+        }
+
+        .linkedin-link i {
+            font-size: 1.8em;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* Pista OSINT sutil */
+        .dev-credit {
+            font-size: 0.85em;
+            margin-top: 25px;
+            opacity: 0.6;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 15px;
+        }
+
+        .dev-credit strong {
+            color: var(--white);
+            opacity: 1;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .about-content {
+                flex-direction: column;
+            }
+            .hero h2 {
+                font-size: 2.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Sinergia Logística Iturbe S.L.</h1>
+            <p>Conectando rutas, optimizando el futuro.</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Su Socio Logístico Global</h2>
+            <p>Más de 25 años de experiencia en transporte nacional e internacional. Gestión integral de la cadena de suministro con tecnología de vanguardia.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-box">
+                    <i class="fas fa-truck-moving"></i>
+                    <h3>Transporte Terrestre</h3>
+                    <p>Flota propia y red de colaboradores para envíos capilares y de larga distancia.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-warehouse"></i>
+                    <h3>Almacenamiento Inteligente</h3>
+                    <p>Gestión de inventarios optimizada en la nube con trazabilidad completa.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-route"></i>
+                    <h3>Consultoría de Ruta</h3>
+                    <p>Análisis de datos para minimizar tiempos de entrega y costes operativos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Fundada en 1998, Sinergia Logística Iturbe nació con la misión de simplificar la logística para empresas de todos los tamaños. Nuestra filosofía se basa en la fiabilidad, la transparencia y la innovación tecnológica.</p>
+                    <p>Contamos con un equipo altamente cualificado y una infraestructura robusta que nos permite adaptarnos a los desafíos constantes del mercado global.</p>
+                </div>
+                <div class="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sinergia Logística Iturbe S.L. Todos los derechos reservados.</p>
+            
+            <a href="URL_DE_LA_PAGINA_DE_EMPRESA_DE_LINKEDIN" class="linkedin-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>Síguenos en LinkedIn
+            </a>
+
+            <div class="dev-credit">
+                Desarrollo y Mantenimiento Web por <strong></strong> (Dpto. de IT)
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
